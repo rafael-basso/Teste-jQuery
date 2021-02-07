@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Test</title>
+
+    <script src="/JS/jquery.js"></script>
+    <script src="/JS/jQuery_script.js"></script>
+    <link rel="stylesheet" href="/estilo.css">
+    
+</head>
+<body>
+    <div id="interface">
+
+        <header id="cabecalho">
+                <hgroup>
+                    <h1>Website Sample</h1>
+                    <h3>This is a model for a simple website</h3>
+                </hgroup>
+                <img src="/Images/baixo_web.webp" id="baixo"> 
+            <nav id="menu">
+                <h1 class="res"></h1>
+                <ul>
+                    <li><a href="/aula5.html">Página inicial</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <section id="corpo">
+        <article id="noticia-principal">
+        <hgroup id="hgroup-article">
+            <h2>Título h2</h2>
+            <h1>Título h1 com fonte personalizada</h1>
+            <figure class="foto_legenda">
+                <img id="img01" src="/Images/glass.webp">
+                <figcaption>
+                    <h1>Glass of Wine</h1>
+                    <p>Copo de vinho</p>
+                </figcaption>
+            </figure>
+            <h3 id="nome">por Rafael Basso</h3>
+            <h3 class="direita">Atualizado em 07/Junho/2020</h3>
+        </hgroup>
+        <p>Exemplos <sup>de</sup><sub>formatacao</sub></p>
+        <h2>Simbolos especiais</h2>
+        <p>
+            &lt; &gt; &le; &ge; &pound; &yen; &dollar; &copy; &reg; &trade; &permil; &sum; &infin; &times; &oplus; &delta; &radic;
+        </p>
+        <h2>Titulo h2</h2>
+        <p>Na conversa <em>particular</em> que Luiza terá com <u>Gabriel</u>, a <del>chefe</del> deve confessar que não deu atenção as suas ideias quando ele as apresentou e que <b>que ele pudesse expor</b> elas em uma futura reunião, porém, ele teria que fazer mais pes&shy;qui&shy;sas a respeito e elaborar uma <a href="http://www.google.com" target="_blank">comparação</a> da proposta atual com a sua. Além disso ela deve <i>convidá-lo</i> para a reunião que <span style="font-weight: 600;">acontecerá</span> no mesmo dia, para ele ficar por dentro do que está sendo feito até o momento e por fim, dizer que irá acompanhar suas super-<wbr/>humano pesquisas mais de perto, para orientar e corrigir seu trabalho, para que ele não precise recorrer ao diretor.
+        </p>
+        <h2>Especificacoes Tecnicas</h2>
+        <table id="tabelaspec">
+            <caption>Tabela técnica do produto <span>JUN/2020</span></caption>
+            <tr><td class="colesquerda">Tela</td><td class="coldireita">resolucao equivalente a tela de 25"</td></tr>
+            <tr><td rowspan="2" class="colesquerda">Camera</td><td class="coldireita">5mp para fotos</td></tr>
+            <tr><td class="coldireita">720p para videos</td></tr>
+            <!--<tr><td colspan="2">Linha extra</td></tr>-->
+            <tr><td rowspan="2" class="colesquerda">Conectividade</td><td class="coldireita">wi-fi</td></tr>
+            <tr><td class="coldireita">bluetooth</td></tr>
+            <tr><td class="colesquerda">Memoria Interna</td><td class="coldireita">12GB</td></tr>
+        </table>
+        </article>
+        </section>
+    
+        <aside id="lateral">
+            <h2>Essa é a parte lateral secundária "ASIDE"</h2>
+            <p>Temos aqui um parágrafo - Na conversa <em>particular</em> que Luiza terá com <u>Gabriel</u>, a <del>chefe</del> deve confessar que não deu atenção as suas ideias quando ele as apresentou e que <b>que ele pudesse expor</b> elas em uma futura reunião, porém, ele teria que fazer mais pes&shy;qui&shy;sas a respeito e elaborar uma <a href="http://www.google.com" target="_blank">comparação</a> da proposta atual com a sua. Além disso ela deve <i>convidá-lo</i> para a reunião que <span style="font-weight: 600;">acontecerá</span> no mesmo dia, para ele ficar por dentro do que está sendo feito até o momento e por fim, dizer que irá acompanhar suas   super-<wbr/>humano pesquisas mais de perto, para orientar e corrigir seu trabalho, para que ele não precise recorrer ao diretor.
+            </p>
+    
+            <section id="section1">
+                <h3>section1</h3>
+            </section>
+            <section id="section2">
+                <h3>section2<br>break line</h3>
+            </section>
+            <section class="section3-imagens">
+            <figure>
+                <img src="/Images/caixa_web.webp" onmouseenter="entra('i1')" onmouseout="sai()" class="img1">
+                <p>Image1</p>
+            </figure>
+            <figure>
+                <img src="/Images/caixa_web.webp" onmouseenter="entra('i2')" onmouseout="sai()" class="img2">
+                <p>Image2</p>
+            </figure>
+            <figure>
+                <img src="/Images/caixa_web.webp" onmouseenter="entra('i3')" onmouseout="sai()" class="img3">
+                <p>Image3</p>
+            </figure>
+            </section>
+            <p class="teste">Teste</p>           
+    
+        </aside>
+        
+        <footer id="rodape">
+            Copyright &copy; 2020 - site by Rafael <br>
+                <a href="http://www.facebook.com" target="_blank">facebook</a> | 
+                <a href="https://github.com/rafael-basso" target="_blank">GitHub</a>
+        </footer>
+        
+        </div>
+
+        <script src="/script.js"></script>
+
+</body>
+</html>

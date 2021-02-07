@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@font-face{
+    font-family: 'FonteLogo';
+    src: url("Font/TheStudentsTeacher-Regular.ttf");
+}
+
+body{
+    /*background-image: url("/Aula5/Images/glass.png");*/
+    font-family: Arial, sans-serif;
+    background-color: gray;
+}
+
+p{
+    text-align: justify; 
+    text-indent: 25px;
+    margin-left: 10px;
+}
+
+h1{
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+/*h2 {
+    border: 1px solid black;
+    background-color: lightgray;
+}*/
+
+a{
+    color: green;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+div#interface {
+    width: 1200px;
+    background-color: white;
+    margin: 10px auto 0px auto;
+    box-shadow: 0px 0px 10px black;
+    /*padding: 10px;*/
+}
+
+
+
+/*CABECALHO*/
+header#cabecalho {
+    border-bottom: 10px black solid;
+    height: 300px;
+    background: url("Images/caixa_web.webp") no-repeat 25px 90px;
+    background-color: #9aac9ea8;
+}
+
+header#cabecalho img#baixo{
+    display: block;
+    float: right;
+    margin: -30px 25px;
+}
+header#cabecalho h1{
+    font-family: FonteLogo, sans-serif;
+    font-size: 25pt;
+    color: lightgray;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+    padding: 10px;
+    margin-bottom: 0px;
+    text-indent: 25px;
+}
+header#cabecalho h3{
+    font-family: 'Titillium Web', sans-serif;
+    color: #888888;
+    font-size: 15pt;
+    margin-top: 0px;
+    text-indent: 25px;
+}
+
+
+
+/*IMAGE*/
+figure.foto_legenda{
+    position: relative;
+    border: 8px solid white;
+    width: 200px;
+    box-shadow: 1px 1px 4px black;
+    margin-left: 200px;
+}
+figure.foto_legenda img{
+    width: 100%;
+    height: 100%;
+}
+figure.foto_legenda figcaption{
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0,0,0,0.4);
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+figure.foto_legenda figcaption p{
+    margin-top: 9cm;
+    color: blue;
+}
+
+figure.foto_legenda figcaption h1{
+    text-align: center;
+    color: white;
+}
+
+figure.foto_legenda:hover figcaption{
+    opacity: 1;
+}
+
+
+/* FORMATACAO DO MENU */
+nav#menu{
+    display: block;
+}
+nav#menu ul{
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: 10px;
+    left: 450px;
+    padding: 10px;
+}
+nav#menu li{
+    display: inline-block;
+    background-color: lightgray;
+    padding: 10px;
+    margin: 2px;
+    border-radius: 10px;
+    transition: background-color 1s;
+}
+nav#menu li:hover {
+    background-color: darkgray;
+}
+nav#menu h1 {
+    /*display: none;*/
+    margin-left: 500px;
+}
+nav#menu a {
+    color: black;
+    text-decoration: none;
+}
+nav#menu a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+
+
+
+/*SECTION*/
+section#corpo {
+    display: block;
+    width: 600px;
+    float: left;
+    border-right: 10px black solid;
+    padding-right: 10px;
+}
+
+/*ASIDE*/
+aside#lateral {
+    display: block;
+    width: 550px;
+    float: right;
+    padding-right: 15px;
+}
+aside#lateral p {
+    font-family: Arial;
+    margin-left: 0px;
+}
+aside#lateral section#section1 {
+    background-color: aqua;
+    border: 5px dashed black;
+    width: 100px;
+    height: 100px;
+    margin-left: 100px;
+}
+aside#lateral section#section2 {
+    display: block;
+    float: right;
+    background-color: aqua;
+    border: 5px double black;
+    width: 100px;
+    height: 100px;
+    margin-top: -110px;
+    margin-right: 100px;
+}
+aside#lateral section h3 {
+    text-align: center;
+}
+aside#lateral h1{
+    color: black;
+    margin-top: -50px;
+    text-align: center;
+}
+
+/*SECTION 3 Imagens*/
+.section3-imagens {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 20px auto 0px;
+    /*border: 5px solid blue;*/
+}
+.section3-imagens > figure{
+    flex: 1 1 100px; 
+    margin: 10px;    
+    /*border: 5px solid green;*/
+}
+.section3-imagens > img{
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.section3-imagens p{
+    margin-left: 0px;
+    text-indent: 0px;
+    text-align: center;
+}
+p.teste{
+    color: blue;
+    text-align: center;
+    font-size: 14pt;
+    
+}
+
+
+/*RODAPE*/
+footer#rodape {
+    clear: both;
+    text-align: center;
+    border-top: 10px black solid;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+article#noticia-principal h2{
+    font-size: 12pt;
+    color: black;
+    background-color: lightgray;
+    padding: 10px 0px 10px 0px;
+    margin: 10px;
+}
+
+/*HGROUP Article*/
+hgroup#hgroup-article h1 {
+    font-family: FonteLogo;
+    font-size: 20pt;
+    color: #606060;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-indent: 25px;
+}
+hgroup#hgroup-article h2 {
+    font-size: 13pt;
+    color: #cecece;
+    background-color: #ffffff;
+    margin: 0px;
+    text-indent: 25px;
+}
+hgroup#hgroup-article h3 {
+    font-size: 10pt;
+    color: green;
+    background-color: #ffffff;
+    margin: 0px;
+}
+hgroup#hgroup-article h3#nome {
+    text-align: center;
+}
+.direita {
+    text-align: right;
+}
+
+/*TABLE*/
+table#tabelaspec {
+    border: 1px solid black;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+}
+table#tabelaspec td {
+    border: 1px double black;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+table#tabelaspec td.colesquerda {
+    color: white;
+    background-color: rgb(77, 74, 74);
+    vertical-align: top;
+    font-weight: bold;
+    text-align: right;
+    border:  rgb(77, 74, 74);
+}
+table#tabelaspec td.coldireita {
+    background-color: lightgray;
+}
+table#tabelaspec caption {
+    color: #888888;
+    font-size: 15pt;
+    font-weight: bolder;
+}
+table#tabelaspec caption span {
+    display: block;
+    float: right;
+    color: black;
+    font-size: 8pt;
+    margin-top: 10px;
+}
+
